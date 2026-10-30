@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#100d18">
+  <meta name="description" content="VowBridge AI Pro — Qloo-grounded programming for multicultural wedding DJs.">
+  <title>VowBridge AI Pro · The cultural wedding studio</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark"><span>V</span><i>✦</i></div><div><strong>vowbridge<span>ai</span></strong><small>PRO · CULTURAL STUDIO</small></div></div>
+      <div class="nav-label">WORKSPACE</div>
+      <nav aria-label="Workspace">
+        <a class="nav-link active" href="#studio"><span>◈</span> Experience studio</a>
+        <a class="nav-link" href="#output"><span>≋</span> Wedding program</a>
+        <a class="nav-link" href="#evidence"><span>◎</span> Taste intelligence</a>
+        <a class="nav-link" href="#audit"><span>◇</span> Verification</a>
+      </nav>
+      <div class="sidebar-spacer"></div>
+      <div class="sidebar-note"><div class="note-icon">✧</div><strong>A more thoughtful celebration.</strong><p>Design for two cultural worlds without guessing what people love.</p></div>
+      <div class="sidebar-bottom"><div class="status-dot" id="connectionDot"></div><div><strong id="connectionLabel">Checking connection</strong><small id="connectionSub">Qloo status</small></div></div>
+    </aside>
+    <main class="main" id="studio">
+      <header class="topbar"><span>WORKSPACE <b>/</b> WEDDING EXPERIENCE STUDIO</span><div class="top-right"><span class="tag-mini">QLOO × AGENTIC PLANNING</span><div class="user-dot">VP</div></div></header>
+      <div class="main-content">
+        <section class="hero">
+          <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-line"></span> THE CULTURAL INTELLIGENCE WEDDING STUDIO</div>
+            <h1>Two cultures.<br><em>One unforgettable</em><br>dance floor<span class="hero-star">✳</span></h1>
+            <p>Design a wedding music experience that respects both families. Powered by Qloo's cultural taste graph, built around measurable fairness and grounded choices.</p>
+            <div class="hero-acts"><a class="primary-link" href="#config">Create an experience <span>↗</span></a><div class="micro-proof"><span class="tiny-star">✦</span> Not a generic playlist generator</div></div>
+          </div>
+          <div class="hero-art" aria-hidden="true"><div class="orbit orbit-1"></div><div class="orbit orbit-2"></div><div class="orbit orbit-3"></div><div class="art-glow"></div><div class="record record-back"><div></div></div><div class="record record-front"><div class="record-center">♡</div></div><div class="floating-disc disc-1">♪</div><div class="floating-disc disc-2">✦</div><div class="art-corner">THE BRIDGE<br>BETWEEN TASTES</div></div>
+        </section>
+        <section class="value-bar"><div><span class="value-symbol">01</span><div><b>Two audiences</b><small>Preferences considered separately</small></div></div><div><span class="value-symbol">02</span><div><b>One cultural graph</b><small>Actual Qloo signals, not guesses</small></div></div><div><span class="value-symbol">03</span><div><b>Verified experience</b><small>Duration, evidence & balance</small></div></div></section>
+        <div class="section-header" id="config"><div><span class="section-kicker">01 / BUILD YOUR CELEBRATION</span><h2>Your story, their sound.</h2><p>Start with artists each family already loves. The agent handles discovery, balance, and scheduling.</p></div><span class="step-chip">STEP 01 OF 02</span></div>
+        <section class="editor-panel">
+          <form id="plannerForm" novalidate>
+            <div class="profiles-grid">
+              <article class="profile-card a"><div class="profile-head"><div class="profile-icon">A</div><div><span class="profile-label">CULTURAL PROFILE</span><h3>Family one</h3></div><div class="profile-flower">✿</div></div><label for="groupA">Favorite artists <span>— separated by commas</span></label><textarea id="groupA" rows="2" maxlength="260" required>Arijit Singh, Diljit Dosanjh</textarea><div class="profile-foot"><span class="mini-dot"></span> Taste seeds · max 4 artists</div></article>
+              <article class="profile-card b"><div class="profile-head"><div class="profile-icon">B</div><div><span class="profile-label">CULTURAL PROFILE</span><h3>Family two</h3></div><div class="profile-flower">✳</div></div><label for="groupB">Favorite artists <span>— separated by commas</span></label><textarea id="groupB" rows="2" maxlength="260" required>Bad Bunny, Karol G</textarea><div class="profile-foot"><span class="mini-dot"></span> Taste seeds · max 4 artists</div></article>
+            </div>
+            <div class="controls-grid"><div><label for="duration">Reception duration</label><select id="duration"><option value="90">90 minutes</option><option value="120">2 hours</option><option value="150">2.5 hours</option><option value="180" selected>3 hours</option><option value="210">3.5 hours</option><option value="240">4 hours</option></select></div><div><label for="vibe">Desired atmosphere</label><select id="vibe"><option value="balanced">Balanced & inclusive</option><option value="elegant">Elegant reception</option><option value="high-energy">High-energy celebration</option></select></div><div class="wide"><label for="banned">Do-not-play artist list <span>(optional)</span></label><input id="banned" placeholder="Add any artists to exclude, separated by commas" autocomplete="off"></div></div>
+            <div class="submit-row"><div class="api-mode"><div class="toggle-buttons"><button type="button" id="liveMode" class="active">✦ Live Qloo</button><button type="button" id="previewMode">◇ Synthetic preview</button></div><small id="modeExplanation">Real artist data and taste affinities from Qloo.</small></div><button type="submit" class="generate-btn" id="generateBtn"><span>Generate cultural program</span><span class="btn-arrow">↗</span></button></div>
+          </form>
+        </section>
+        <div class="notice" id="messageBox" role="status" aria-live="polite" hidden></div>
+        <div class="loading-steps" id="loadingSteps" hidden><div class="loading-orb"></div><div><strong>The agent is connecting the dots…</strong><span id="loadingText">Resolving your favorite artists and consulting Qloo.</span></div></div>
+        <section class="result-section" id="output" hidden><div class="section-header"><div><span class="section-kicker">02 / YOUR GENERATED EXPERIENCE</span><h2>A dance floor for everyone.</h2><p>Every slot is grounded in artist evidence and checked against your rules.</p></div><span class="step-chip" id="resultMode">LIVE QLOO</span></div>
+          <div class="score-grid"><article><span>PROGRAM LENGTH</span><strong id="scoreDuration">—</strong><small>Verified allocation</small></article><article><span>FAMILY A REPRESENTATION</span><strong id="scoreA">—</strong><small>Weighted programming time</small></article><article><span>FAMILY B REPRESENTATION</span><strong id="scoreB">—</strong><small>Weighted programming time</small></article><article><span>NEW DISCOVERIES</span><strong id="scoreNew">—</strong><small>Beyond submitted favorites</small></article></div>
+          <div class="output-grid"><article class="panel big"><div class="panel-header"><div><span class="panel-eyebrow">THE PROGRAM</span><h3>Celebration timeline</h3></div><span class="verified-pill">✓ Constraints verified</span></div><div class="timeline-strip" id="timelineStrip" aria-label="Visual time allocation"></div><div class="legend"><span><i class="a-color"></i> Family one</span><span><i class="b-color"></i> Family two</span><span><i class="bridge-color"></i> Shared affinity</span></div><div class="timeline-rows" id="timelineRows"></div></article><article class="panel aside-panel"><div class="panel-header"><div><span class="panel-eyebrow">THE DIFFERENCE</span><h3>What Qloo adds</h3></div></div><div class="qloo-mark">✦</div><div class="difference-metric"><strong id="sharedCount">—</strong><span>Independently shared artist candidates</span></div><p>We ask Qloo separately what each family likes, then check where those recommendation sets actually overlap.</p><div class="line"></div><h4>Without cultural intelligence</h4><p>A basic program can alternate the artists you entered. It cannot discover evidence-backed additions.</p><h4>With Qloo</h4><p>The agent discovers related artists, finds independently shared suggestions when available, and documents its sources.</p></article></div>
+          <div class="output-grid second" id="evidence"><article class="panel"><div class="panel-header"><div><span class="panel-eyebrow">THE CULTURAL GRAPH</span><h3>Evidence from Qloo</h3></div></div><div class="evidence-grid"><div><h4>Family one · discoveries</h4><div id="evidenceA" class="chips"></div></div><div><h4>Family two · discoveries</h4><div id="evidenceB" class="chips"></div></div><div class="evidence-full"><h4>Cross-audience candidates</h4><div id="evidenceShared" class="chips"></div></div></div><p class="fineprint" id="evidenceFoot"></p></article><article class="panel" id="audit"><div class="panel-header"><div><span class="panel-eyebrow">INDEPENDENT CHECKS</span><h3>Trust, but verify.</h3></div></div><div id="auditRows" class="audit-items"></div><div class="audit-note">A verified program means constraints passed, not that guests will enjoy every selection. DJ judgment and music licensing remain essential.</div></article></div>
+          <article class="panel trace-panel"><div class="panel-header"><div><span class="panel-eyebrow">AGENTIC WORKFLOW</span><h3>What the agent actually did</h3></div><span class="trace-badge">AUTONOMOUS STEPS</span></div><div id="traceRows" class="trace-grid"></div></article>
+          <div class="footer-actions"><div><strong>Not quite right?</strong><span>Ban an artist in the plan or edit your tastes above. The agent will regenerate and verify the schedule.</span></div><div class="footer-buttons"><button type="button" class="secondary-btn" id="downloadBtn">↓ Download JSON</button><button type="button" class="secondary-btn" id="csvBtn">↓ Export DJ CSV</button><a href="#config" class="primary-link">Refine & regenerate ↗</a></div></div>
+        </section>
+        <footer class="page-footer"><div><b>vowbridge<span>ai</span></b> PRO <span>·</span> Powered by Qloo <span>·</span> Created for the Qloo Agentic Hackathon</div><div>Artist-level planning. No copyrighted music playback.</div></footer>
+      </div>
+    </main>
+  </div>
+<script src="/assets/app.js" defer></script>
+</body>
+</html>
